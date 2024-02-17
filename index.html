@@ -15,7 +15,7 @@
   <body>
     <!-- Navbar -->
     <div class="navbar">
-      <span class="kanit-thin">Form Designer</span>
+      <span class="kanit-thin logo">Form Designer</span>
       <button class="nav-save kanit-regular">Save</button>
     </div>
 
@@ -38,13 +38,23 @@
     <!-- Content area -->
     <div class="content">
       <h1>Form Editor</h1>
+      <div class="home-btn-container">
+        <button id="add-input1" class="kanit-regular btn-sidebar">
+          Input <span class="plus-sign">&plus;</span>
+        </button>
+        <button id="add-select1" class="kanit-regular btn-sidebar">
+          Select <span class="plus-sign">&plus;</span>
+        </button>
+        <button id="add-text1" class="kanit-regular btn-sidebar">
+          Text Area <span class="plus-sign">&plus;</span>
+        </button>
+      </div>
       <div id="form-container"></div>
     </div>
 
     <!-- Modal -->
     <div id="editModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
         <h2>Edit Form Element</h2>
       </div>
     </div>
